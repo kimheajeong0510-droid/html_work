@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+     display: flex;
+     flex-direction: column; 
+     width: 1500px;
+    }
+    header{
+      border-bottom: 1px solid gray;
+    }
+    footer {
+      border-top: 1px solid gray;
+    }
+    nav {
+      border-right: 1px solid gray;
+    }
+    aside {
+      border-left: 1px solid gray;
+    }
+    nav, aside {
+      /* 넓이 고정 */
+      flex-basis: 150px;
+      /* 다른 놈 희생 */
+      flex-shrink: 0;
+    }
+    .content {
+      display: flex;
+    }
+    main {
+      text-align: justify;
+      padding: 10px;
+      column-count: 4;
+      column-width: 200px;
+      column-gap: 20px;
+      column-rule-color: red;
+      column-rule-style: solid;
+      column-rule-width: 1px;
+    }
+
+
+  </style>
+</head>
+<body>
+ <div class="container">
+  <header>
+    <h1>Holy Grail Layout</h1>
+  </header>
+  <section class="content">
+    <nav>
+      <ul>
+        <li>main</li>
+        <li>about</li>
+        <li>help</li>
+      </ul>
+    </nav>
+    <main>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam debitis architecto, numquam neque possimus rem in iusto officiis, eius eaque repellat. Quae inventore expedita odit excepturi deleniti reiciendis omnis suscipit?
+        Iste recusandae inventore tenetur sunt, accusamus doloribus modi, eaque sed ab asperiores aspernatur quae laborum maiores voluptas quos impedit? Nihil laboriosam expedita vitae culpa quod obcaecati eum illo, aliquid dolore!
+        Illo aliquid mollitia ex unde fuga ratione quisquam facere optio et porro consequatur nihil nesciunt dolores aspernatur dicta neque, quibusdam ad in molestias velit, fugit sunt hic ipsum voluptate! Beatae.
+        Architecto error magnam corrupti accusamus, aliquid vero pariatur eius. Optio placeat nam distinctio! Quae blanditiis doloremque eaque iusto dolor tempora voluptatibus ut, exercitationem ipsa officiis esse quaerat tenetur eum minus.
+        Deserunt nihil dicta ipsam reiciendis saepe, dolorum natus quaerat eius odit! Officia libero perspiciatis modi harum amet quibusdam quia sapiente aut, fugiat asperiores sequi? Iusto libero amet beatae vel ipsum!
+        Eveniet voluptates quos ducimus neque hic reiciendis, corporis excepturi nemo temporibus quidem accusantium, sit, molestiae necessitatibus adipisci magnam ut deleniti quas dolor saepe autem ea. Laudantium qui hic similique animi.
+        Quibusdam repellat quas nam possimus a ipsum, impedit pariatur perferendis qui voluptate eligendi nemo. Laborum, exercitationem animi labore, autem expedita laboriosam quas perferendis iure dolor doloribus ipsam deserunt provident ad.
+        Deserunt tenetur neque, laudantium nobis a fuga alias dolor cumque recusandae iste commodi ipsum, omnis sequi optio eius autem. Temporibus a corporis molestias, nam dolore ad assumenda quidem libero ducimus.
+        Modi dolor soluta tempore quam sit delectus corrupti recusandae, dolorem aliquid in magni explicabo natus iure. Suscipit soluta repudiandae iusto enim consequatur, aliquid quia sit quae minima voluptatum explicabo aspernatur?
+        Veritatis maiores distinctio incidunt magni nulla accusamus consequuntur labore eum esse assumenda modi doloribus alias minima aliquid nostrum rerum quidem voluptate, inventore nihil fugiat repellendus in sed. Saepe, facere architecto.
+      </p>
+    </main>
+    <aside>
+      AD (광고)
+    </aside>
+  </section>
+  <footer>
+    <a href="www.naver.com">홈페이지</a>
+  </footer>
+ </div> 
+</body>
+</html>
